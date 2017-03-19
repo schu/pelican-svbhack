@@ -83,7 +83,7 @@
     {% endblock %}
 
     <div id="ending_message">
-      <p>&copy; <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a> {{ AUTHOR }}. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">Giulio Fidente</a>. {% if INTERNET_DEFENSE_LEAGUE %}Member of the <a href="http://internetdefenseleague.org">Internet Defense League</a>.{% endif %}</p>
+      <p>&copy; <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a> {% if AUTHOR_WEBSITE %}<a href="{{ AUTHOR_WEBSITE }}">{% endif %}{{ AUTHOR }}{% if AUTHOR_WEBSITE %}</a>{% endif %}. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">Giulio Fidente</a>. {% if INTERNET_DEFENSE_LEAGUE %}Member of the <a href="http://internetdefenseleague.org">Internet Defense League</a>.{% endif %}</p>
     </div>
   </main>
   {% include "modules/idl.html" %}
